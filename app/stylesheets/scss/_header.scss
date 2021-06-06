@@ -29,6 +29,9 @@
             &:last-child {
                 color: $grayishblue;
             }
+            &:hover {
+                border-bottom: 1.5px solid $verydarkblue;
+            }
         }
         .dot {
             margin-right: 40px;
