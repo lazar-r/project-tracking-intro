@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="app/stylesheets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <div class="header__logo">
+          <a href="#">
+            <img src="/images/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="header__toggle hide-for-desktop">
+          <div id="btnHamburger" class="burger__container flex flex-ai-c">
+            <svg class="burger" xmlns="http://www.w3.org/2000/svg" width="24" height="16"><g fill="#242942" fill-rule="evenodd">
+              <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g>
+            </svg>
+            <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <path fill="#242942" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="header__links hide-for-mobile">
+          <ul>
+            <li class="flex flex-ai-c">
+              <a href="#">Product</a>
+              <a href="#">Features</a>
+              <a href="#">Pricing</a>
+              <div class="dot"></div>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="menu" class="header__menu flex flex-ai-c flex-jc-c hide-for-desktop">
+        <ul>
+          <li class="flex flex-fd-c flex-ai-c">
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <div class="hr"></div>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="flex flex-ai-c">
+        <div class="hero__text">
+          <div class="top flex flex-ai-c flex-fd-r">
+            <h5 class="new">
+              New
+            </h5>
+            <h5 class="mono">
+              Monograph Dashboard
+            </h5>
+          </div>
+          <h1>
+            Powerful insights <br> into your team
+          </h1>
+          <p>
+            Project planning and time tracking <br> for agile teams
+          </p>
+          <div class="bottom flex flex-ai-c">
+            <button class="button flex">
+              Schedule a demo
+            </button>
+            <h5 class="preview">
+              to see a preview
+            </h5>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="/images/illustration-devices.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="/app/js/script.js"></script>
+</html>

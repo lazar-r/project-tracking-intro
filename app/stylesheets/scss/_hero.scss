@@ -1,0 +1,103 @@
+.hero {
+    margin-bottom: 150px;
+    .flex {
+        @include breakpoint-down(medium) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        margin-top: 165px;
+        margin-right: 100px;
+        @include breakpoint-down(medium) {
+            margin: 100px 0;
+            order: 2;
+        }
+        .top {
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            margin-bottom: 30px;
+            @include breakpoint-down(medium) {
+                flex-direction: row;
+            }
+            .new {
+                color: white;
+                background-color: $verydarkblue;
+                border-radius: 25px;
+                padding: 5px 12px;
+            }
+            .mono {
+                margin-left: 30px;
+                font-weight: 400;
+                color: $darkgrayishblue;
+                letter-spacing: 3px;
+                white-space: nowrap;
+                @include breakpoint-down(small) {
+                    letter-spacing: 3px;
+                }
+            }
+        }
+        h1 {
+            white-space: nowrap;
+        }
+        h4 {
+            color: $darkgrayishblue;
+        }
+        p {
+            margin-top: 40px;
+            margin-bottom: 65px;
+            color: $darkgrayishblue;
+            @include breakpoint-down(small) {
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+        }
+        .bottom {
+            text-transform: uppercase;
+            @include breakpoint-down(medium) {
+                flex-direction: row;
+            }
+            .preview {
+                margin-left: 30px;
+                font-weight: 400;
+                color: $darkgrayishblue;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+    &__image {
+        position: relative;
+        margin-top: 130px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 99;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $lightgrayishblue;
+            height: 145%;
+            width: 145%;
+            z-index: -1;
+            top: -100%;
+            right: 0;
+            left: 0;
+            border-bottom-left-radius: 50px;
+            @include breakpoint-down(medium) {
+                left: 50%;
+                bottom: -200px;
+            }
+        }
+        @include breakpoint-down(medium) {
+            order: 1;
+        }
+        img {
+            @include breakpoint-down(medium) {
+                width: 145%;
+                height: auto;
+            }
+        }
+        @include breakpoint-down(medium) {
+            max-width: inherit;
+        }
+    }
+}
