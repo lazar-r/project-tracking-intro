@@ -231,7 +231,12 @@ button:hover, .button:hover {
 }
 
 .hero {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+}
+@media (max-width: 63.9375em) {
+  .hero {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 63.9375em) {
   .hero .flex {
@@ -335,6 +340,7 @@ button:hover, .button:hover {
 @media (max-width: 63.9375em) {
   .hero__image {
     order: 1;
+    margin-top: 50px;
   }
 }
 @media (max-width: 63.9375em) {

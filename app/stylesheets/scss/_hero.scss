@@ -1,5 +1,8 @@
 .hero {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+    @include breakpoint-down(medium) {
+        margin-bottom: 50px;
+    }
     .flex {
         @include breakpoint-down(medium) {
             flex-direction: column;
@@ -89,6 +92,7 @@
         }
         @include breakpoint-down(medium) {
             order: 1;
+            margin-top: 50px;
         }
         img {
             @include breakpoint-down(medium) {
